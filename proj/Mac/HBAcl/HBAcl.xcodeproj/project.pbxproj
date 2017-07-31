@@ -2868,6 +2868,11 @@
 		A15E2B8B1F2F31CB00ECCA4F /* test_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A15E205E1F2F31C300ECCA4F /* test_main.c */; };
 		A15E2B8C1F2F31CB00ECCA4F /* unit_test.c in Sources */ = {isa = PBXBuildFile; fileRef = A15E20611F2F31C300ECCA4F /* unit_test.c */; };
 		A15E2B8D1F2F31CB00ECCA4F /* unit_test_fn.c in Sources */ = {isa = PBXBuildFile; fileRef = A15E20631F2F31C300ECCA4F /* unit_test_fn.c */; };
+		A15E2B9D1F2F362A00ECCA4F /* udp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15E2B9B1F2F362A00ECCA4F /* udp.cpp */; };
+		A15E2BA21F2F374F00ECCA4F /* dns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15E2BA01F2F374F00ECCA4F /* dns.cpp */; };
+		A1C48EAE1F2F4EC900988065 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1C48EAC1F2F4EC900988065 /* server.cpp */; };
+		A1C48EB11F2F512C00988065 /* server1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1C48EAF1F2F512C00988065 /* server1.cpp */; };
+		A1C48EB41F2F531C00988065 /* server2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1C48EB21F2F531C00988065 /* server2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -9053,6 +9058,16 @@
 		A15E20661F2F31C300ECCA4F /* unit_test.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = unit_test.vcxproj; sourceTree = "<group>"; };
 		A15E20671F2F31C300ECCA4F /* unit_test.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = unit_test.vcxproj.filters; sourceTree = "<group>"; };
 		A15E20681F2F31C300ECCA4F /* vstream.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = vstream.sh; sourceTree = "<group>"; };
+		A15E2B9B1F2F362A00ECCA4F /* udp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = udp.cpp; sourceTree = "<group>"; };
+		A15E2B9C1F2F362A00ECCA4F /* udp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp.h; sourceTree = "<group>"; };
+		A15E2BA01F2F374F00ECCA4F /* dns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dns.cpp; sourceTree = "<group>"; };
+		A15E2BA11F2F374F00ECCA4F /* dns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns.h; sourceTree = "<group>"; };
+		A1C48EAC1F2F4EC900988065 /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
+		A1C48EAD1F2F4EC900988065 /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
+		A1C48EAF1F2F512C00988065 /* server1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server1.cpp; sourceTree = "<group>"; };
+		A1C48EB01F2F512C00988065 /* server1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server1.hpp; sourceTree = "<group>"; };
+		A1C48EB21F2F531C00988065 /* server2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server2.cpp; sourceTree = "<group>"; };
+		A1C48EB31F2F531C00988065 /* server2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -9551,6 +9566,7 @@
 		A15E050D1F2F2C8800ECCA4F /* HBAcl */ = {
 			isa = PBXGroup;
 			children = (
+				A15E2B981F2F35EE00ECCA4F /* src */,
 				A15E050E1F2F2C8800ECCA4F /* main.cpp */,
 			);
 			path = HBAcl;
@@ -22441,6 +22457,56 @@
 			path = unit_test;
 			sourceTree = "<group>";
 		};
+		A15E2B981F2F35EE00ECCA4F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A15E2B991F2F35EE00ECCA4F /* network */,
+			);
+			name = src;
+			path = ../../../../src;
+			sourceTree = "<group>";
+		};
+		A15E2B991F2F35EE00ECCA4F /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A15E2BA31F2F386F00ECCA4F /* server */,
+				A15E2B9F1F2F373900ECCA4F /* dns */,
+				A15E2B9A1F2F35EE00ECCA4F /* udp */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		A15E2B9A1F2F35EE00ECCA4F /* udp */ = {
+			isa = PBXGroup;
+			children = (
+				A15E2B9B1F2F362A00ECCA4F /* udp.cpp */,
+				A15E2B9C1F2F362A00ECCA4F /* udp.h */,
+			);
+			path = udp;
+			sourceTree = "<group>";
+		};
+		A15E2B9F1F2F373900ECCA4F /* dns */ = {
+			isa = PBXGroup;
+			children = (
+				A15E2BA01F2F374F00ECCA4F /* dns.cpp */,
+				A15E2BA11F2F374F00ECCA4F /* dns.h */,
+			);
+			path = dns;
+			sourceTree = "<group>";
+		};
+		A15E2BA31F2F386F00ECCA4F /* server */ = {
+			isa = PBXGroup;
+			children = (
+				A1C48EB21F2F531C00988065 /* server2.cpp */,
+				A1C48EB31F2F531C00988065 /* server2.hpp */,
+				A1C48EAF1F2F512C00988065 /* server1.cpp */,
+				A1C48EB01F2F512C00988065 /* server1.hpp */,
+				A1C48EAC1F2F4EC900988065 /* server.cpp */,
+				A1C48EAD1F2F4EC900988065 /* server.hpp */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -22558,7 +22624,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15E2BA21F2F374F00ECCA4F /* dns.cpp in Sources */,
+				A1C48EB41F2F531C00988065 /* server2.cpp in Sources */,
 				A15E050F1F2F2C8800ECCA4F /* main.cpp in Sources */,
+				A1C48EAE1F2F4EC900988065 /* server.cpp in Sources */,
+				A15E2B9D1F2F362A00ECCA4F /* udp.cpp in Sources */,
+				A1C48EB11F2F512C00988065 /* server1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -25134,6 +25205,7 @@
 				A15E05141F2F2C8800ECCA4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A15E052A1F2F315300ECCA4F /* Build configuration list for PBXNativeTarget "Acl_xcode" */ = {
 			isa = XCConfigurationList;
@@ -25142,6 +25214,7 @@
 				A15E052C1F2F315300ECCA4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
