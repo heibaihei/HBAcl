@@ -6,7 +6,7 @@
 //  Copyright © 2017年 meitu. All rights reserved.
 //
 
-#include "server.hpp"
+#include "server.h"
 
 #include "lib_acl.h"  /* 先包含ACL库头文件 */
 #include <stdio.h>

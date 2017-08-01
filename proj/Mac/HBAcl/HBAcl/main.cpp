@@ -12,13 +12,14 @@
 
 #include "network/udp/udp.h"
 #include "network/dns/dns.h"
+#include "network/server/server.h"
 
 /**
  * http://zsxxsz.iteye.com/blog/403531
  */
     
-int main(int argc, const char * argv[]) {
+int main(int argc, char * argv[]) {
     
-    dns_test_demo();
+    server_test_demo();
     return 0;
 }

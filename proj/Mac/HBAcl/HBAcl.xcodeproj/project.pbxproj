@@ -2871,7 +2871,6 @@
 		A15E2B9D1F2F362A00ECCA4F /* udp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15E2B9B1F2F362A00ECCA4F /* udp.cpp */; };
 		A15E2BA21F2F374F00ECCA4F /* dns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15E2BA01F2F374F00ECCA4F /* dns.cpp */; };
 		A1C48EAE1F2F4EC900988065 /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1C48EAC1F2F4EC900988065 /* server.cpp */; };
-		A1C48EB11F2F512C00988065 /* server1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1C48EAF1F2F512C00988065 /* server1.cpp */; };
 		A1C48EB41F2F531C00988065 /* server2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1C48EB21F2F531C00988065 /* server2.cpp */; };
 /* End PBXBuildFile section */
 
@@ -4727,7 +4726,7 @@
 		A15E0D1B1F2F31BD00ECCA4F /* acl_vbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_vbuf.h; sourceTree = "<group>"; };
 		A15E0D1C1F2F31BD00ECCA4F /* acl_vbuf_print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_vbuf_print.h; sourceTree = "<group>"; };
 		A15E0D1D1F2F31BD00ECCA4F /* acl_vsprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_vsprintf.h; sourceTree = "<group>"; };
-		A15E0D1E1F2F31BD00ECCA4F /* acl_vstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_vstream.h; sourceTree = "<group>"; };
+		A15E0D1E1F2F31BD00ECCA4F /* acl_vstream.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = acl_vstream.h; sourceTree = "<group>"; };
 		A15E0D1F1F2F31BD00ECCA4F /* acl_vstream_popen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_vstream_popen.h; sourceTree = "<group>"; };
 		A15E0D201F2F31BD00ECCA4F /* acl_vstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_vstring.h; sourceTree = "<group>"; };
 		A15E0D211F2F31BD00ECCA4F /* acl_vstring_vstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_vstring_vstream.h; sourceTree = "<group>"; };
@@ -9063,11 +9062,9 @@
 		A15E2BA01F2F374F00ECCA4F /* dns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dns.cpp; sourceTree = "<group>"; };
 		A15E2BA11F2F374F00ECCA4F /* dns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns.h; sourceTree = "<group>"; };
 		A1C48EAC1F2F4EC900988065 /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
-		A1C48EAD1F2F4EC900988065 /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
-		A1C48EAF1F2F512C00988065 /* server1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server1.cpp; sourceTree = "<group>"; };
-		A1C48EB01F2F512C00988065 /* server1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server1.hpp; sourceTree = "<group>"; };
+		A1C48EAD1F2F4EC900988065 /* server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server.h; sourceTree = "<group>"; };
 		A1C48EB21F2F531C00988065 /* server2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server2.cpp; sourceTree = "<group>"; };
-		A1C48EB31F2F531C00988065 /* server2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server2.hpp; sourceTree = "<group>"; };
+		A1C48EB31F2F531C00988065 /* server2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22498,11 +22495,9 @@
 			isa = PBXGroup;
 			children = (
 				A1C48EB21F2F531C00988065 /* server2.cpp */,
-				A1C48EB31F2F531C00988065 /* server2.hpp */,
-				A1C48EAF1F2F512C00988065 /* server1.cpp */,
-				A1C48EB01F2F512C00988065 /* server1.hpp */,
+				A1C48EB31F2F531C00988065 /* server2.h */,
 				A1C48EAC1F2F4EC900988065 /* server.cpp */,
-				A1C48EAD1F2F4EC900988065 /* server.hpp */,
+				A1C48EAD1F2F4EC900988065 /* server.h */,
 			);
 			path = server;
 			sourceTree = "<group>";
@@ -22629,7 +22624,6 @@
 				A15E050F1F2F2C8800ECCA4F /* main.cpp in Sources */,
 				A1C48EAE1F2F4EC900988065 /* server.cpp in Sources */,
 				A15E2B9D1F2F362A00ECCA4F /* udp.cpp in Sources */,
-				A1C48EB11F2F512C00988065 /* server1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
