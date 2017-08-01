@@ -4659,7 +4659,7 @@
 		A15E0CD51F2F31BD00ECCA4F /* acl_sane_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_sane_socket.h; sourceTree = "<group>"; };
 		A15E0CD61F2F31BD00ECCA4F /* acl_tcp_ctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_tcp_ctl.h; sourceTree = "<group>"; };
 		A15E0CD71F2F31BD00ECCA4F /* acl_valid_hostname.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_valid_hostname.h; sourceTree = "<group>"; };
-		A15E0CD81F2F31BD00ECCA4F /* acl_vstream_net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_vstream_net.h; sourceTree = "<group>"; };
+		A15E0CD81F2F31BD00ECCA4F /* acl_vstream_net.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = acl_vstream_net.h; sourceTree = "<group>"; };
 		A15E0CDA1F2F31BD00ECCA4F /* acl_proctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_proctl.h; sourceTree = "<group>"; };
 		A15E0CDC1F2F31BD00ECCA4F /* acl_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_allocator.h; sourceTree = "<group>"; };
 		A15E0CDD1F2F31BD00ECCA4F /* acl_argv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_argv.h; sourceTree = "<group>"; };
@@ -4673,7 +4673,7 @@
 		A15E0CE51F2F31BD00ECCA4F /* acl_cfg_macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_cfg_macro.h; sourceTree = "<group>"; };
 		A15E0CE61F2F31BD00ECCA4F /* acl_chunk_chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_chunk_chain.h; sourceTree = "<group>"; };
 		A15E0CE71F2F31BD00ECCA4F /* acl_dbuf_pool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_dbuf_pool.h; sourceTree = "<group>"; };
-		A15E0CE81F2F31BD00ECCA4F /* acl_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_debug.h; sourceTree = "<group>"; };
+		A15E0CE81F2F31BD00ECCA4F /* acl_debug.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = acl_debug.h; sourceTree = "<group>"; };
 		A15E0CE91F2F31BD00ECCA4F /* acl_debug_malloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_debug_malloc.h; sourceTree = "<group>"; };
 		A15E0CEA1F2F31BD00ECCA4F /* acl_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_define.h; sourceTree = "<group>"; };
 		A15E0CEB1F2F31BD00ECCA4F /* acl_define_bsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_define_bsd.h; sourceTree = "<group>"; };
@@ -4704,9 +4704,9 @@
 		A15E0D041F2F31BD00ECCA4F /* acl_mem_hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_mem_hook.h; sourceTree = "<group>"; };
 		A15E0D051F2F31BD00ECCA4F /* acl_mem_slice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_mem_slice.h; sourceTree = "<group>"; };
 		A15E0D061F2F31BD00ECCA4F /* acl_meter_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_meter_time.h; sourceTree = "<group>"; };
-		A15E0D071F2F31BD00ECCA4F /* acl_msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_msg.h; sourceTree = "<group>"; };
+		A15E0D071F2F31BD00ECCA4F /* acl_msg.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = acl_msg.h; sourceTree = "<group>"; };
 		A15E0D081F2F31BD00ECCA4F /* acl_myflock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_myflock.h; sourceTree = "<group>"; };
-		A15E0D091F2F31BD00ECCA4F /* acl_mylog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_mylog.h; sourceTree = "<group>"; };
+		A15E0D091F2F31BD00ECCA4F /* acl_mylog.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = acl_mylog.h; sourceTree = "<group>"; };
 		A15E0D0A1F2F31BD00ECCA4F /* acl_mymalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_mymalloc.h; sourceTree = "<group>"; };
 		A15E0D0B1F2F31BD00ECCA4F /* acl_mystring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_mystring.h; sourceTree = "<group>"; };
 		A15E0D0C1F2F31BD00ECCA4F /* acl_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_process.h; sourceTree = "<group>"; };
@@ -5594,7 +5594,7 @@
 		A15E11241F2F31BE00ECCA4F /* acl_sane_socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acl_sane_socket.c; sourceTree = "<group>"; };
 		A15E11251F2F31BE00ECCA4F /* acl_tcp_ctl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acl_tcp_ctl.c; sourceTree = "<group>"; };
 		A15E11261F2F31BE00ECCA4F /* acl_valid_hostname.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acl_valid_hostname.c; sourceTree = "<group>"; };
-		A15E11271F2F31BE00ECCA4F /* acl_vstream_net.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acl_vstream_net.c; sourceTree = "<group>"; };
+		A15E11271F2F31BE00ECCA4F /* acl_vstream_net.c */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.c; path = acl_vstream_net.c; sourceTree = "<group>"; };
 		A15E11291F2F31BE00ECCA4F /* acl_inet_connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acl_inet_connect.c; sourceTree = "<group>"; };
 		A15E112A1F2F31BE00ECCA4F /* acl_sane_connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acl_sane_connect.c; sourceTree = "<group>"; };
 		A15E112B1F2F31BE00ECCA4F /* acl_stream_connect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acl_stream_connect.c; sourceTree = "<group>"; };
@@ -25140,6 +25140,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../src\"",
 					"\"$(SRCROOT)/../../../acl_master/lib_acl/include\"",
 					"\"$(SRCROOT)/../../../acl_master/lib_protocol/include\"",
 					"\"$(SRCROOT)/../../../acl_master/lib_acl_cpp/include\"",
@@ -25157,6 +25158,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../src\"",
 					"\"$(SRCROOT)/../../../acl_master/lib_acl/include\"",
 					"\"$(SRCROOT)/../../../acl_master/lib_protocol/include\"",
 					"\"$(SRCROOT)/../../../acl_master/lib_acl_cpp/include\"",

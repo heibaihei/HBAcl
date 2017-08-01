@@ -9,6 +9,15 @@
 #ifndef udp_hpp
 #define udp_hpp
 
-#include <stdio.h>
+#include<stdio.h>
+#include<pthread.h>
+#include<string.h>
+#include<sys/types.h>
+#include<unistd.h>
+
+void* udp_client(void* arg);
+void* udp_server(void *arg);
+
+int demo();
 
 #endif /* udp_hpp */
