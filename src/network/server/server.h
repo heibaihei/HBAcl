@@ -17,7 +17,8 @@
 #include<unistd.h>
 #include "lib_acl.h"
 
-void* echo_client(ACL_VSTREAM *client);
+
+void* Client_Run(void *arg);
 
 /** 阻塞式线程服务器 */
 int server_test_demo();

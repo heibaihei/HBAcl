@@ -6,23 +6,15 @@
 //  Copyright © 2017年 meitu. All rights reserved.
 //
 
+#include "ConcurrentServer.h"
+
 #include "server.h"
-
-#include "lib_acl.h"  /* 先包含ACL库头文件 */
-#include <stdio.h>
-#include <stdlib.h>
-
-// 线程池
-
-#include "lib_acl.h"  /* 先包含ACL库头文件 */
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * 单独的线程处理来自于客户端的连接
  * @param arg {void*} 添加任务时的对象
  */
-static void echo_client_thread(void *arg)
+static void client_worker_thread(void *arg)
 {
     ACL_VSTREAM *client = (ACL_VSTREAM*) arg;
     char  buf[1024];
@@ -45,6 +37,7 @@ static void echo_client_thread(void *arg)
     /* 关闭客户端流 */
     acl_vstream_close(client);
 }
+
 
 /**
  * 创建半驻留线程池的过程
@@ -70,10 +63,11 @@ static acl_pthread_pool_t *create_thread_pool(void)
 
 /**
  * 开始运行
- * @param addr {const char*} 服务器监听地址，如：127.0.0.1:8081
+ * @param arg {const char*} 服务器监听地址，如：127.0.0.1:8081
  */
-static void run(const char *addr)
+void* Concurrent_Server_Run(void *arg)
 {
+    const char *addr = (char *)arg;
     const char *myname = "run";
     acl_pthread_pool_t *thr_pool;
     ACL_VSTREAM *sstream;
@@ -87,7 +81,7 @@ static void run(const char *addr)
         printf("%s(%d): listen on %s error(%s)\r\n",
                myname, __LINE__, addr,
                acl_last_strerror(ebuf, sizeof(ebuf)));
-        return;
+        return NULL;
     }
     
     printf("%s: listen %s ok\r\n", myname, addr);
@@ -107,14 +101,15 @@ static void run(const char *addr)
         /**
          * 向线程池中添加一个任务
          * @param thr_pool 线程池句柄
-         * @param echo_client_thread 工作线程的回调函数
+         * @param client_worker_thread 工作线程的回调函数
          * @param client 客户端数据流
          */
-        acl_pthread_pool_add(thr_pool, echo_client_thread, client);
+        acl_pthread_pool_add(thr_pool, client_worker_thread, client);
     }
     
     /* 销毁线程池对象 */
     acl_pthread_pool_destroy(thr_pool);
+    return NULL;
 }
 
 /**
@@ -137,16 +132,43 @@ static void usage(const char *procname)
     getchar();
 }
 
-#if 0
-int main(int argc, char *argv[])
+int Concurrent_Server_Demo()
 {
+    char *local_addr = (char *)"127.0.0.1:8080";
+    char *listen_addr = (char *)"127.0.0.1:8080";
+    
+    int argc = 2;
     if (argc != 2) {
-        usage(argv[0]);
+        usage(local_addr);
         return (0);
     }
     
     init();
-    run(argv[1]);
+    
+    pthread_t gSvrThread;
+    int threadSvrID = pthread_create(&gSvrThread, NULL, Concurrent_Server_Run, local_addr);
+    if(threadSvrID != 0) {
+        printf("can't create server thread: %s\n",strerror(threadSvrID));
+        return 1;
+    }
+    
+    sleep(3);
+    
+    /** 触发多客户端发起的连接 */
+    int iMaxCount=10, i=0;
+    while (i < iMaxCount) {
+        pthread_t gCliThread;
+        int threadCliID = pthread_create(&gCliThread, NULL, Client_Run, listen_addr);
+        if(threadCliID != 0) {
+            printf("can't create server thread: %s\n", strerror(threadCliID));
+            return 1;
+        }
+        i++;
+    }
+    
+    while (true) {
+        sleep(20);
+    }
+    
     return (0);
 }
-#endif

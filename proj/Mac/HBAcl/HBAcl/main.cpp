@@ -13,6 +13,7 @@
 #include "network/udp/udp.h"
 #include "network/dns/dns.h"
 #include "network/server/server.h"
+#include "network/server/ConcurrentServer.h"
 
 /**
  * http://zsxxsz.iteye.com/blog/403531
@@ -20,6 +21,6 @@
     
 int main(int argc, char * argv[]) {
     
-    server_test_demo();
+    Concurrent_Server_Demo();
     return 0;
 }
