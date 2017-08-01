@@ -11,13 +11,14 @@
 #include "lib_acl.h"
 
 #include "network/udp/udp.h"
+#include "network/dns/dns.h"
 
-
-
-//http://zsxxsz.iteye.com/blog/403531
+/**
+ * http://zsxxsz.iteye.com/blog/403531
+ */
     
 int main(int argc, const char * argv[]) {
     
-    
+    dns_test_demo();
     return 0;
 }

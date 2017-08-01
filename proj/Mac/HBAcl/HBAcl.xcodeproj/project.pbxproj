@@ -4654,7 +4654,7 @@
 		A15E0CD01F2F31BD00ECCA4F /* acl_mask_addr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_mask_addr.h; sourceTree = "<group>"; };
 		A15E0CD11F2F31BD00ECCA4F /* acl_net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_net.h; sourceTree = "<group>"; };
 		A15E0CD21F2F31BD00ECCA4F /* acl_netdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_netdb.h; sourceTree = "<group>"; };
-		A15E0CD31F2F31BD00ECCA4F /* acl_res.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_res.h; sourceTree = "<group>"; };
+		A15E0CD31F2F31BD00ECCA4F /* acl_res.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = acl_res.h; sourceTree = "<group>"; };
 		A15E0CD41F2F31BD00ECCA4F /* acl_sane_inet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_sane_inet.h; sourceTree = "<group>"; };
 		A15E0CD51F2F31BD00ECCA4F /* acl_sane_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_sane_socket.h; sourceTree = "<group>"; };
 		A15E0CD61F2F31BD00ECCA4F /* acl_tcp_ctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = acl_tcp_ctl.h; sourceTree = "<group>"; };

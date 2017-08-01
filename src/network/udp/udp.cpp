@@ -91,8 +91,7 @@ void* udp_client(void* arg)
     return NULL;
 }
 
-#if 1
-int demo() {
+int udp_test_demo() {
     pthread_t gSvrThread;
     pthread_t gCliThread;
     
@@ -112,4 +111,3 @@ int demo() {
         sleep(20);
     }
 }
-#endif

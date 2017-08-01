@@ -18,6 +18,6 @@
 void* udp_client(void* arg);
 void* udp_server(void *arg);
 
-int demo();
+int udp_test_demo();
 
 #endif /* udp_hpp */

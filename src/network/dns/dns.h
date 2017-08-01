@@ -9,6 +9,9 @@
 #ifndef dns_hpp
 #define dns_hpp
 
+#include "acl_stdlib.h"
 #include <stdio.h>
+
+int dns_test_demo();
 
 #endif /* dns_hpp */
